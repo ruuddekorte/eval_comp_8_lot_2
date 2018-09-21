@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Effra";
+    src: url("Effra_Std_Lt.woff2") format('woff2');
+}
+
+
+
     * {
     box-sizing: border-box;
 }
@@ -199,7 +206,7 @@ textarea { max-width: 620px; }
 .headerwrapper {height: 300px;}
 .address {width: 33:33%;}
 .addresdetails {visibility: visible;}
-textarea { width: 620px; }
+textarea { max-width: 620px; }
 .write_me,
 .roadmap {width: 640px;}
 }
