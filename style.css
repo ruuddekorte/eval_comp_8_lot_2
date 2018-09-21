@@ -1,0 +1,205 @@
+    * {
+    box-sizing: border-box;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Effra, sans-serif;
+    margin: 0;
+}
+
+
+/* Header/image Title */
+
+.header {
+    margin-top: 0;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    background-image: url("image.jpg");
+    background-size: cover;
+}
+
+.headerwrapper {
+    min-height: 100px;
+    position: relative;
+}
+
+.headertitle {
+    font-size: 45px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+/* Column container */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Sidebar/left column */
+
+.aside {
+    flex: 33%;
+    /*    background-color: #f1f1f1;*/
+    padding: 20px;
+}
+
+
+/* Main column / right column*/
+
+.main {
+    flex: 66%;
+    background-color: white;
+    padding: 20px;
+/*    display: flex;
+    justify-content: center;*/
+}
+
+.addresframe {
+    width: 90%;
+    max-width: 302px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid grey;
+}
+
+.addresframe h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.main h1 {
+	font-size: 24px;
+}
+
+.addresdetails {
+
+}
+
+.addresdetails p {
+    margin-left: 20px;
+}
+
+.addresimg {
+    background-color: #aaa;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+}
+
+
+/* Form */
+
+.write_me{
+	text-align: center;
+}
+.write_me_title{
+	text-align: left;
+}
+label p{
+	margin-bottom: 10px;
+}
+
+input[type=text] {
+	width: 300px;
+}
+.field {
+	width: 302px;
+}
+textarea {
+	height:200px;
+}
+.buttonfield {
+	text-align: right;
+	max-width: 600px;
+}
+
+.fieldgroup {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+/* Sidebar/left column */
+
+.field {
+    flex: 50%;
+/*    padding: 20px;*/
+}
+
+.roadmap {
+	height:400px;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	min-height: 200px;
+    padding: 20px;
+    text-align: left;
+    background: #323232;
+}
+
+
+/* Responsive layout - when the screen is less than 780px wide, 
+ * make the two columns aside and main stack on top of each other instead of 
+ * next to each other 
+ * Hide address */
+
+
+/* For mobile phones: 0 - 320 px */
+/*###############################*/
+@media screen and (max-width: 320px) {
+.header,
+.headerwrapper {    height: 100px;}
+.row,
+.navbar,
+.fieldgroup {    flex-direction: column;}
+.addresframe {height: 65px;}
+.addresdetails { visibility: hidden;}
+textarea { width: 300px; }
+.write_me,
+.roadmap {width: 320px;}
+}
+
+
+
+/* For tablets:     321 - 780 px */
+/*###############################*/
+@media screen and (min-width: 321px) and (max-width: 780px) {
+.header,
+.headerwrapper {height: 100px;}
+.row,
+.navbar {flex-direction: column;}
+.addresframe {height: 65px;}
+.addresdetails {visibility: hidden;}
+textarea { max-width: 620px; }
+.write_me,
+.roadmap {max-width: 640px;}
+}
+
+/* For desktops:   781 - 1200 px */
+/*###############################*/
+@media screen and (min-width: 781px) {
+.header,
+.headerwrapper {height: 300px;}
+.address {width: 33:33%;}
+.addresdetails {visibility: visible;}
+textarea { width: 620px; }
+.write_me,
+.roadmap {width: 640px;}
+}
