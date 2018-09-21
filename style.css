@@ -7,7 +7,8 @@
 
 @font-face {
     font-family: "Effra";
-    src: url("Effra_Std_Lt.woff2") format('woff2');
+    src: url("Effra_Std_Lt.woff2") format('woff2'),
+         url("Effra_Std_Lt.ttf")   format('truetype');;
 }
 
 * {
