@@ -31,8 +31,7 @@ body {
     min-height: 100px;
     width: 100%;
     text-align: center;
-    background-image: url("image.jpg");
-    background-size: cover;
+    background-color: #000033;
 }
 
 .headerwrapper {
@@ -168,6 +167,17 @@ textarea {
 }
 
 
+	.toggle{
+     visibility: hidden;
+   }
+
+   .addresframe:hover .toggle{
+visibility: visible;
+   }
+
+
+
+
 
 /* Responsive layout - when the screen is less than 780px wide, 
  * make the two columns aside and main stack on top of each other instead of 
@@ -184,6 +194,7 @@ textarea {
     .header,
     .headerwrapper {
         height: 100px;
+        color: white;
     }
     .row,
     .navbar,
@@ -193,8 +204,18 @@ textarea {
     .addresframe {
         height: 65px;
     }
+
+   .addresframe:hover{
+   		background-color: yellow;
+		visibility: visible;
+		height: 250px;
+   }
+
     .addresdetails {
         visibility: hidden;
+    }
+    .show {
+        visibility: visible;
     }
     textarea {
         width: 300px;
@@ -217,6 +238,7 @@ textarea {
     .header,
     .headerwrapper {
         height: 100px;
+        color: white;
     }
     .row,
     .navbar {
@@ -246,8 +268,14 @@ textarea {
 /*###############################*/
 
 @media screen and (min-width: 781px) {
-    .header,
-    .headerwrapper {
+	.header {
+    	background-image: url("image.jpg");
+    	background-size: cover;
+    }
+	.header,
+	.headerwrapper {
+		height: 300px;
+		color: black;
         height: 300px;
     }
     .address {
