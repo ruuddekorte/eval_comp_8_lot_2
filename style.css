@@ -1,11 +1,16 @@
+/* style.css */
+
+
+/* use the font from the wireframe effra regular light            
+ * simply named effra, since there are no other font(variations) 
+ */
+
 @font-face {
     font-family: "Effra";
     src: url("Effra_Std_Lt.woff2") format('woff2');
 }
 
-
-
-    * {
+* {
     box-sizing: border-box;
 }
 
@@ -47,7 +52,6 @@ body {
 }
 
 
-
 /* Column container */
 
 .row {
@@ -56,12 +60,10 @@ body {
 }
 
 
-
 /* Sidebar/left column */
 
 .aside {
     flex: 33%;
-    /*    background-color: #f1f1f1;*/
     padding: 20px;
 }
 
@@ -72,8 +74,6 @@ body {
     flex: 66%;
     background-color: white;
     padding: 20px;
-/*    display: flex;
-    justify-content: center;*/
 }
 
 .addresframe {
@@ -88,13 +88,12 @@ body {
     font-size: 24px;
     text-align: center;
 }
+
 .main h1 {
-	font-size: 24px;
+    font-size: 24px;
 }
 
-.addresdetails {
-
-}
+.addresdetails {}
 
 .addresdetails p {
     margin-left: 20px;
@@ -110,28 +109,33 @@ body {
 
 /* Form */
 
-.write_me{
-	text-align: center;
+.write_me {
+    text-align: center;
 }
-.write_me_title{
-	text-align: left;
+
+.write_me_title {
+    text-align: left;
 }
-label p{
-	margin-bottom: 10px;
+
+label p {
+    margin-bottom: 10px;
 }
 
 input[type=text] {
-	width: 300px;
+    width: 300px;
 }
+
 .field {
-	width: 302px;
+    width: 302px;
 }
+
 textarea {
-	height:200px;
+    height: 200px;
 }
+
 .buttonfield {
-	text-align: right;
-	max-width: 600px;
+    text-align: right;
+    max-width: 600px;
 }
 
 .fieldgroup {
@@ -140,26 +144,28 @@ textarea {
     text-align: left;
 }
 
+
 /* Sidebar/left column */
 
 .field {
     flex: 50%;
-/*    padding: 20px;*/
 }
 
 .roadmap {
-	height:400px;
+    height: 400px;
 }
+
 
 /* Footer */
 
 .footer {
-	width: 100%;
-	min-height: 200px;
+    width: 100%;
+    min-height: 200px;
     padding: 20px;
     text-align: left;
     background: #323232;
 }
+
 
 
 /* Responsive layout - when the screen is less than 780px wide, 
@@ -169,44 +175,91 @@ textarea {
 
 
 /* For mobile phones: 0 - 320 px */
+
+
 /*###############################*/
+
 @media screen and (max-width: 320px) {
-.header,
-.headerwrapper {    height: 100px;}
-.row,
-.navbar,
-.fieldgroup {    flex-direction: column;}
-.addresframe {height: 65px;}
-.addresdetails { visibility: hidden;}
-textarea { width: 300px; }
-.write_me,
-.roadmap {width: 320px;}
+    .header,
+    .headerwrapper {
+        height: 100px;
+    }
+    .row,
+    .navbar,
+    .fieldgroup {
+        flex-direction: column;
+    }
+    .addresframe {
+        height: 65px;
+    }
+    .addresdetails {
+        visibility: hidden;
+    }
+    textarea {
+        width: 300px;
+    }
+    .write_me,
+    .roadmap {
+        width: 320px;
+    }
 }
+
 
 
 
 /* For tablets:     321 - 780 px */
+
+
 /*###############################*/
+
 @media screen and (min-width: 321px) and (max-width: 780px) {
-.header,
-.headerwrapper {height: 100px;}
-.row,
-.navbar {flex-direction: column;}
-.addresframe {height: 65px;}
-.addresdetails {visibility: hidden;}
-textarea { max-width: 620px; }
-.write_me,
-.roadmap {max-width: 640px;}
+    .header,
+    .headerwrapper {
+        height: 100px;
+    }
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+    .addresframe {
+        height: 65px;
+    }
+    .addresdetails {
+        visibility: hidden;
+    }
+    textarea {
+        max-width: 620px;
+    }
+    .write_me,
+    .roadmap {
+        max-width: 640px;
+    }
 }
 
+
+
+
 /* For desktops:   781 - 1200 px */
+
+
 /*###############################*/
+
 @media screen and (min-width: 781px) {
-.header,
-.headerwrapper {height: 300px;}
-.address {width: 33:33%;}
-.addresdetails {visibility: visible;}
-textarea { max-width: 620px; }
-.write_me,
-.roadmap {width: 640px;}
+    .header,
+    .headerwrapper {
+        height: 300px;
+    }
+    .address {
+        width: 33:33%;
+    }
+    .addresdetails {
+        visibility: visible;
+    }
+    textarea {
+        max-width: 620px;
+    }
+    .write_me,
+    .roadmap {
+        width: 640px;
+    }
 }
